@@ -1,0 +1,189 @@
+/******************************************************************
+Site Name: njosefbeck.com
+Author: Nathan (Josef) Beck
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+
+The text above mostly comes from the stylesheets founds in the Bones WP theme: http://themble.com/bones
+
+******************************************************************/
+/**********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all our mixins, functions, and variables that we'll be using across the whole project.
+
+For this project, we just have two partials.
+**********************/
+/**********************
+BASE (MOBILE) SIZE
+This is our mobile style. It's what people see on their phones! If you set a great foundation, you won't need to add too many styles in the other stylesheets. Keep it light!
+**********************/
+/*******************************************************
+Site Name: njosefbeck.com
+Author: Nathan (Josef) Beck
+
+Stylesheet: Base Mobile Stylesheet
+
+Everything here will be loaded by mobile devices. This is called at the top of the main stylesheet and will be used across all viewports.
+
+********************************************************/
+/***********************
+GENERAL STYLES
+***********************/
+.bold {
+  font-weight: bold;
+}
+
+.large-font {
+  font-size: 10em;
+}
+
+/***********************
+LINK STYLES
+***********************/
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+/************************
+HIDES MAIN CONTENT BLOCKS ON PAGE LOAD
+************************/
+.develops-info, .yoga-info, .blog-info, .connect-info {
+  display: none;
+}
+
+/************************
+INFO-CONTENT STYLES (Main content blocks of site)
+************************/
+.info-content {
+  font-size: 1.5em;
+  margin-top: 1.8em;
+  margin-bottom: 2em;
+}
+.info-content h2 {
+  margin-top: 1.5em;
+}
+.info-content h3 {
+  margin-top: 1em;
+}
+.info-content p {
+  margin-top: 1.4em;
+}
+.info-content a, .info-content a:visited {
+  text-decoration: underline;
+  color: #DB3340;
+}
+.info-content a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/*****************************
+MAIN SELECTOR ROW STYLES
+*****************************/
+.njosefbeck {
+  background-color: #DB3340;
+  color: #590706;
+}
+.njosefbeck a, .njosefbeck a:visited, .njosefbeck a:hover {
+  text-decoration: none;
+  color: #590706;
+}
+
+.develops {
+  background-color: #E8B71A;
+}
+.develops a, .develops a:visited, .develops a:hover {
+  text-decoration: none;
+}
+
+.yoga {
+  background-color: #F7EAC8;
+}
+.yoga a, .yoga a:visited, .yoga a:hover {
+  text-decoration: none;
+}
+
+.blogs {
+  background-color: #1FDA9A;
+}
+.blogs a, .blogs a:visited, .blogs a:hover {
+  text-decoration: none;
+}
+
+.connect {
+  background-color: #28ABE3;
+}
+.connect a, .connect a:visited, .connect a:hover {
+  text-decoration: none;
+}
+
+/*********************
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*********************/
+@media only screen and (min-width: 400px) {
+  /*******************************************************
+  Site Name: njosefbeck.com
+  Author: Nathan (Josef) Beck
+  
+  Stylesheet: 400px and Up Stylesheet
+  
+  This stylesheet is loaded for larger devices, such as a landscaped iPhone.
+  
+  ********************************************************/
+  .large-font {
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+  }
+}
+/*********************
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 600px) {
+  /*******************************************************
+  Site Name: njosefbeck.com
+  Author: Nathan (Josef) Beck
+  
+  Stylesheet: Tablet Stylesheet
+  
+  This stylesheet is loaded for larger devices, such as a tablet.
+  ********************************************************/
+  .large-font {
+    font-size: 5.1em;
+    padding: 0;
+    margin: 0;
+  }
+}
+/*********************
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 800px) {
+  /*******************************************************
+  Site Name: njosefbeck.com
+  Author: Nathan (Josef) Beck
+  
+  Stylesheet: Tablet Stylesheet
+  
+  This stylesheet is loaded for small-to-large desktops.
+  ********************************************************/
+  .large-font {
+    font-size: 6.9em;
+    padding: 0;
+    margin: 0;
+  }
+}

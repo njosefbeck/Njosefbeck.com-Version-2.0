@@ -1,0 +1,131 @@
+/*******************************************************
+Site Name: njosefbeck.com
+Author: Nathan (Josef) Beck
+
+Stylesheet: Base Mobile Stylesheet
+
+Everything here will be loaded by mobile devices. This is called at the top of the main stylesheet and will be used across all viewports.
+
+********************************************************/
+
+
+/***********************
+GENERAL STYLES
+***********************/
+
+.bold {
+	font-weight: bold;
+}
+
+.large-font {
+	font-size: 10em;
+}
+
+/***********************
+LINK STYLES
+***********************/
+
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: $link-color;
+	
+}
+
+
+/************************
+HIDES MAIN CONTENT BLOCKS ON PAGE LOAD
+************************/
+
+.develops-info, .yoga-info, .blog-info, .connect-info {
+	display: none;
+}
+
+/************************
+INFO-CONTENT STYLES (Main content blocks of site)
+************************/
+
+.info-content {
+	
+	font-size: 1.5em;
+	margin-top: 1.8em;
+	margin-bottom: 2em;
+	
+	h2 {
+		
+		margin-top: 1.5em;
+		
+	}
+	
+	h3 {
+		
+		margin-top: 1em;
+		
+	}
+	
+	p {
+		
+		margin-top: 1.4em;
+		
+	}
+	
+	a, a:visited {
+		text-decoration: underline;
+		color: $info-content-link-color;
+	
+	}
+		
+	a:hover {
+			
+			text-decoration: none;
+			color: $black;
+			
+		}
+		
+	
+}
+
+/*****************************
+MAIN SELECTOR ROW STYLES
+*****************************/
+
+.njosefbeck {
+	background-color: $njosefbeck-bg-color;
+	color: $njosefbeck-text-color;
+	
+	a, a:visited, a:hover {
+		
+		text-decoration: none;
+		color: $njosefbeck-link-color;
+		
+	}
+	
+}
+
+.develops {
+	background-color: $develops-bg-color;
+	
+	@include no-link-decoration;
+	
+}
+
+.yoga {
+	background-color: $yoga-bg-color;
+	
+	@include no-link-decoration;
+	
+}
+
+.blogs {
+	background-color: $blogs-bg-color;
+	
+	@include no-link-decoration;
+	
+}
+
+.connect {
+	background-color: $connect-bg-color;
+	
+	@include no-link-decoration;
+	
+}
+	

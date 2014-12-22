@@ -1,0 +1,100 @@
+.large-font { /**/
+	font-size: 10em;
+}
+
+.bold { /**/
+	font-weight: bold;
+}
+
+@media (min-width: 400px) { /**/
+    .large-font {font-size:3em; padding: 0; margin: 0;}
+}
+
+@media (min-width: 600px) { /**/
+    .large-font {font-size:5.1em; padding: 0; margin: 0;}
+}
+
+
+@media (min-width: 800px) { /**/
+    .large-font {font-size:6.9em; padding: 0; margin: 0;}
+}
+
+
+.njosefbeck { /**/
+	background-color: #DB3340;
+	/*color: #F5C4BE; lighter color option */
+	color: #590706;
+	
+}
+
+.develops { /**/
+	background-color: #E8B71A;
+	/*color: #996306;*/
+	
+}
+
+.develops-info, .yoga-info, .blog-info, .connect-info {
+	display: none;
+}
+
+.info-content { /**/
+	font-size: 1.5em;
+	margin-top: 1.8em;
+	margin-bottom: 2em;
+}
+
+.info-content h2 { /**/
+	
+	margin-top: 1.5em;
+	
+}
+
+.info-content h3 { /**/
+	
+	margin-top: 1em;
+	
+}
+
+.info-content p { /**/
+	
+	margin-top: 1.4em;
+	
+}
+
+.yoga { /**/
+	background-color: #F7EAC8;
+	/*color: #A5422D;*/
+	
+}
+
+.blogs { /**/
+	background-color: #1FDA9A;
+	/* color: #0E5035; */
+	
+}
+
+.connect { /**/
+	background-color: #28ABE3;
+	/* color: #15225D; */
+	
+}
+
+a:link { /**/
+	text-decoration: none;
+	color: #333;
+}
+
+a:visited { /**/
+	text-decoration: none;
+	color: #333;
+}
+
+
+.njosefbeck a:link { /**/
+	text-decoration: none;
+	color: #590706;
+}
+
+.njosefbeck a:visited { /**/
+	color: #590706;
+}

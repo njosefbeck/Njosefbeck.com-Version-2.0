@@ -1,0 +1,9 @@
+@mixin no-link-decoration {
+	
+	a, a:visited, a:hover {
+		
+		text-decoration: none;
+		
+	}
+	
+}
